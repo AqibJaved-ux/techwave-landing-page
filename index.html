@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechWave - Modern Startup Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">TechWave</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Launch Your Ideas to the World</h1>
+    <p>TechWave helps startups go live with speed and style.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+<script>
+  function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return false;
+    }
+
+    alert("Message sent successfully!");
+    return true;
+  }
+</script>
+
+</body>
+</html>
+<!-- Features Section -->
+<section class="features" id="features">
+  <h2>Why Choose TechWave?</h2>
+  <div class="feature-container">
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png" alt="Speed Icon" />
+      <h3>Lightning Fast</h3>
+      <p>Experience blazing fast performance with our optimized systems.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Security Icon" />
+      <h3>Secure</h3>
+      <p>Your data is safe with our top-notch encryption and safety protocols.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="Responsive Icon" />
+      <h3>Responsive</h3>
+      <p>Our designs work seamlessly on all devices and screen sizes.</p>
+    </div>
+  </div>
+</section>
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About TechWave</h2>
+      <p>
+        At TechWave, we empower startups and businesses to build fast, secure, and scalable web solutions. Our mission is to make technology accessible and impactful through modern design and clean code.
+      </p>
+      <p>
+        With a passion for innovation and commitment to quality, TechWave helps you ride the wave of digital transformation.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="About TechWave Image" />
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-box">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client Photo">
+      <h3>Sara Ali</h3>
+      <p>“TechWave transformed our idea into a reality. Their service is fast, secure, and top quality!”</p>
+    </div>
+    <div class="testimonial-box">
+      <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Client Photo">
+      <h3>Ahmed Khan</h3>
+      <p>“Very professional team! The responsive design works perfectly on all devices.”</p>
+    </div>
+    <div class="testimonial-box">
+      <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Client Photo">
+      <h3>Usman Raza</h3>
+      <p>“I’m impressed with the quality of work. TechWave is now our go-to web partner.”</p>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Get in Touch</h2>
+  <p>Have a project in mind? Let's talk!</p>
+  
+  <form class="contact-form" onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2025 TechWave. All rights reserved.</p>
+  <div class="social-links">
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+</footer>
